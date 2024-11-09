@@ -2,9 +2,11 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="in"
-                 name="Instance Name"
-                 start-page="starter.md">
-
-    <toc-element topic="starter.md"/>
+<instance-profile
+        id="in"
+        name="Ktorfitx 基于Ktor的代码生成KSP插件"
+        start-page="ProjectIntroduction.md"
+>
+    <toc-element topic="ProjectIntroduction.md"/>
+    <toc-element topic="QuickStart.md"/>
 </instance-profile>
