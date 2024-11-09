@@ -4,7 +4,7 @@
 
 <instance-profile
         id="in"
-        name="Ktorfitx 基于Ktor的代码生成KSP插件"
+        name="Ktorfitx 基于 Ktor 的 RESTful API 框架"
         start-page="ProjectIntroduction.md"
 >
     <toc-element topic="ProjectIntroduction.md"/>
