@@ -3,11 +3,11 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
-        <primary-color>halloween</primary-color>
+        <primary-color>ruby</primary-color>
         <custom-favicons>fav_logo.png</custom-favicons>
         <noindex-content>false</noindex-content>
         <header-logo>logo.png</header-logo>
-        <download-title>前往 Github 主页</download-title>
+        <download-title>Github 主页</download-title>
         <download-page>https://github.com/vividcodex/ktorfitx</download-page>
         <showDownloadButton>true</showDownloadButton>
         <link-color>frozen</link-color>
@@ -15,5 +15,4 @@
     <footer>
         <copyright>2024 Ktorfitx.</copyright>
     </footer>
-
 </buildprofiles>
