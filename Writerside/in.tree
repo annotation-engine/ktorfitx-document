@@ -2,7 +2,12 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="in" name="Ktorfitx&nbsp;&nbsp;3.0.1-2.0.0&nbsp;&nbsp;|&nbsp;&nbsp;基于 Ktor 的 RESTful API 框架" start-page="Index.md">
+<instance-profile id="in" name="Ktorfitx&nbsp;&nbsp;3.0.1-2.0.0&nbsp;&nbsp;|&nbsp;&nbsp;基于 Ktor 的 RESTful API 框架"
+                  start-page="Index.md">
     <toc-element topic="Index.md"/>
-    <toc-element topic="QuickStart.md"/>
+    <toc-element topic="快速开始.md"/>
+    <toc-element topic="客户端配置.md">
+        <toc-element topic="接口作用域.md"/>
+        <toc-element topic="代码配置.md"/>
+    </toc-element>
 </instance-profile>
