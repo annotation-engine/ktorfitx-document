@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE instance-profile
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
-
-<instance-profile id="in" name="Ktorfitx&nbsp;&nbsp;3.0.2-2.1.0&nbsp;&nbsp;|&nbsp;&nbsp;基于 Ktor 的 RESTful API 框架"
-                  start-page="Index.md">
-    <toc-element topic="Index.md"/>
-    <toc-element topic="快速开始.md"/>
-    <toc-element topic="客户端配置.md">
-    </toc-element>
-    <toc-element topic="基本规则.md">
-        <toc-element topic="方法规则.md"/>
-        <toc-element topic="返回类型规则.md"/>
-    </toc-element>
-    <toc-element topic="注解用法.md">
-        <toc-element topic="Api.md">
-        </toc-element>
-        <toc-element topic="GET.md"/>
-    </toc-element>
-    <toc-element topic="Mock.md"/>
-    <toc-element topic="异常处理.md"/>
+<!DOCTYPE instance-profile SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+<instance-profile name="Ktorfitx 3.2.2-3.0.2 ｜ 基于 KSP 和 KotlinPoet 实现的 Ktor 代码生成框架" id="in" start-page="项目简介.md">
+	<toc-element topic="项目简介.md" />
 </instance-profile>
