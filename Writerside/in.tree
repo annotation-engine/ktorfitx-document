@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE instance-profile SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
-<instance-profile name="Ktorfitx 3.2.2-3.0.2 ｜ 基于 KSP 和 KotlinPoet 实现的 Ktor 代码生成框架" id="in" start-page="项目简介.md">
-	<toc-element topic="项目简介.md" />
+<instance-profile
+	name="Ktorfit X 3.2.2-3.0.2 ｜ 基于 KSP 和 KotlinPoet 实现的 Ktor 代码生成框架"
+	id="in"
+	start-page="project-brief.md"
+>
+	<toc-element topic="project-brief.md" />
+	<toc-element topic="kotlin-multiplatform.md">
+		<toc-element toc-title="ANNOTATION_CLASS">
+			<toc-element topic="http-method.md" />
+		</toc-element>
+	</toc-element>
 </instance-profile>

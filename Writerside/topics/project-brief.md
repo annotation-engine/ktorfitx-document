@@ -1,17 +1,24 @@
 # 项目简介
 
-KtorfitX 是一个基于 Kotlin Multiplatform 和 Ktor 构建的跨平台网络请求框架，旨在通过注解简化 RESTful API 的声明与实现。它支持客户端与服务端的代码自动生成，帮助开发者减少样板代码，提高开发效率。
+Ktorfit X 是一个基于 Kotlin Multiplatform 和 Ktor 构建的跨平台网络请求框架，旨在通过注解简化 RESTful API 的声明与实现。它支持客户端与服务端的代码自动生成，帮助开发者减少样板代码，提高开发效率。
+
+## 依赖以及平台版本
+
+- **Kotlin** `2.2.0`
+- **Ktor**：`3.2.2`
+- **KSP**：`2.2.0-2.0.2`
+- **JVM** `21`
 
 ## 核心特点
 
-- **多平台支持**：支持 Android、iOS、JS、WASM、 MacOS、Linux、Windows 等平台。
+- **多平台支持**：支持 Android、iOS、watchOS、tvOS、Js、WasmJs、 macOS、Linux、Windows 等平台。
 - **注解驱动**：通过注解定义 API 接口与服务端路由，使用 KSP 自动生成实现类与 Ktor 路由注册代码。
 - **支持 WebSocket、Mock、Timeout、Header/Cookie/Path 等常见参数类型**
 - **服务端授权支持**：内置 `@Authentication` 注解支持路由授权处理。
 
 ## 模块组成
 
-### Kotlin Multiplatform 客户端模块 {id="kotlin-multiplatform_1"}
+### Kotlin Multiplatform 客户端模块
 
 | 模块名                        | 功能           |
 |----------------------------|--------------|
@@ -37,12 +44,6 @@ KtorfitX 是一个基于 Kotlin Multiplatform 和 Ktor 构建的跨平台网络�
 |-------------------|-----------|
 | `common-ksp-util` | 通用符号处理器工具 |
 
-## 技术栈与依赖
-
-- **Kotlin**：`2.2.0`
-- **Ktor**：`3.2.2`
-- **KSP**：`2.2.0-2.0.2`
-
 ## 全面拥抱 3.x，从 2.x 迁移到 3.x
 
 - 原 `cn.vividcode.multiplatform` 包名已迁移为 `cn.ktorfitx`，旧的依赖包已停止维护 ⚠️
@@ -50,10 +51,8 @@ KtorfitX 是一个基于 Kotlin Multiplatform 和 Ktor 构建的跨平台网络�
 
 ## 编译期校验
 
-KtorfitX 提供编译期间的错误校验支持，能够在使用错误的注解或结构时给出明确提示，帮助用户快速定位问题。
+Ktorfit X 提供编译期间的错误校验支持，能够在使用错误的注解或结构时给出明确提示，帮助用户快速定位问题。
 
 ## 异常处理
 
-### Kotlin Multiplatform
-
-- 当函数返回类型为 `Result<T>` 时，Ktorfitx 会自动捕获并封装网络异常；如果返回值为普通类型，则需自行处理异常逻辑。
+- 当函数返回类型为 `Result<T>` 时，Ktorfit X 会自动捕获并封装网络异常；如果返回值为普通类型，则需自行处理异常逻辑。

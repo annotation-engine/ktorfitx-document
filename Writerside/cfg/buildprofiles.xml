@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE buildprofiles SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-profiles.dtd">
-<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <variables>
-        <primary-color>ruby</primary-color>
-        <custom-favicons>fav_logo.png</custom-favicons>
-        <noindex-content>false</noindex-content>
-        <header-logo>logo.png</header-logo>
-        <download-title>Github 主页</download-title>
-        <download-page>https://github.com/vividcodex/ktorfitx</download-page>
-        <showDownloadButton>true</showDownloadButton>
-        <link-color>frozen</link-color>
-    </variables>
-    <footer>
-        <copyright>2024 Ktorfitx.</copyright>
-    </footer>
+<buildprofiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd">
+	<variables>
+		<primary-color>ruby</primary-color>
+		<custom-favicons>fav_logo.png</custom-favicons>
+		<noindex-content>false</noindex-content>
+		<header-logo>logo.png</header-logo>
+		<download-title>Github 主页</download-title>
+		<download-page>https://github.com/vividcodex/ktorfitx</download-page>
+		<showDownloadButton>true</showDownloadButton>
+		<link-color>frozen</link-color>
+	</variables>
+	<footer>
+		<copyright>2024–2025 ktorfitx - Apache License 2.0.</copyright>
+	</footer>
 </buildprofiles>
