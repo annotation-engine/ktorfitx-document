@@ -2,7 +2,7 @@
 <!DOCTYPE instance-profile SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 <instance-profile
 	name="Ktorfit X 3.2.2-3.0.2"
-	id="ktorfitx"
+	id="in"
 	start-page="project-brief.md"
 >
 	<toc-element topic="project-brief.md" />
