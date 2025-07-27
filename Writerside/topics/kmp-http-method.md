@@ -15,7 +15,7 @@ annotation class CUSTOM(
 
 ## 注意事项
 
-- 必须添加 `@Retention` 为 `AnnotationRetention.SOURCE`
-- 必须添加 `@Target` 为 `AnnotationTarget.FUNCTION`
-- 参数必须按照示例代码中的形式
+- 必须标记 `@Retention` 注解，并将值设置为 `AnnotationRetention.SOURCE`
+- 必须标记 `@Target` 注解，并将值设置为 `AnnotationTarget.FUNCTION`
+- 必须添加一个名称为 `url` 类型为 `String` 的参数
 - `@HttpMethod` 的 `method` 默认值为自定义注解名称

@@ -2,9 +2,5 @@
 <!DOCTYPE categories
 	SYSTEM "https://resources.jetbrains.com/writerside/1.0/categories.dtd">
 <categories>
-	<category
-		name="Writerside documentation"
-		id="wrs"
-		order="1"
-	/>
+	<category name="Writerside documentation" id="wrs" order="1" />
 </categories>

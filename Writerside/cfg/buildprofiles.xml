@@ -7,7 +7,7 @@
 		<custom-favicons>fav_logo.png</custom-favicons>
 		<noindex-content>false</noindex-content>
 		<header-logo>logo.png</header-logo>
-		<download-title>Github 主页</download-title>
+		<download-title>GitHub</download-title>
 		<download-page>https://github.com/vividcodex/ktorfitx</download-page>
 		<showDownloadButton>true</showDownloadButton>
 		<link-color>frozen</link-color>

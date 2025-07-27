@@ -1,6 +1,7 @@
 # Kotlin Multiplatform
 
-在 Kotlin Multiplatform 中，包含以下23个注解
+在 Kotlin Multiplatform 中，接口生成的实现类在当前包下的 `impls` 包中，
+扩展名为当前类名称的小驼峰形式
 
 ## 支持平台
 
@@ -21,7 +22,7 @@
 
 ### 目标 `ANNOTATION_CLASS`
 
-- [`@HttpMethod`](http-method.md)：支持自定义 HTTP 方法类型，用于非标准请求方法，需标注在自定义注解上
+- [`@HttpMethod`](kmp-http-method.md)：支持自定义 HTTP 方法类型，用于非标准请求方法，需标注在自定义注解上
 
 ### 目标 `CLASS`
 
