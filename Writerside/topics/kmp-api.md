@@ -2,7 +2,7 @@
 
 定义服务接口类型，作为生成 REST 风格 Ktor 请求代码的标识
 
-## 示例代码
+## 代码示例
 
 ```kotlin
 @Api(url = "user")
@@ -14,9 +14,14 @@ interface UserApi {
 		@Field password: String
 	): LoginDTO
 }
+
+@Serializable
+data class LoginDTO(
+	val token: String
+)
 ```
 
-## 生成代码
+## 生成实现
 
 以下代码将会自动生成，您只需要通过 `Ktorfitx<DefaultApiScope>` 的扩展属性 `userApi` 获取实例即可
 
@@ -36,6 +41,7 @@ private class UserApiImpl private constructor(
 	
 	@OptIn(InternalAPI::class)
 	companion object {
+		
 		private var defaultApiScopeInstance: UserApi? = null
 		
 		private val defaultApiScopeSynchronizedObject: SynchronizedObject = SynchronizedObject()
