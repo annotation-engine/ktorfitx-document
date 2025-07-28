@@ -10,8 +10,9 @@
 		<toc-element topic="kmp-api.md" />
 		<toc-element topic="kmp-api-scope.md" />
 		<toc-element topic="kmp-http-method.md" />
-		<toc-element topic="kmp-http-request.md" >
-		</toc-element>
+		<toc-element topic="kmp-http-request.md" />
 		<toc-element topic="kmp-bearer-auth.md" />
+		<toc-element topic="kmp-headers.md" />
+		<toc-element topic="kmp-mock.md" />
 	</toc-element>
 </instance-profile>

@@ -16,80 +16,51 @@
 
 ## 代码示例
 
-```kotlin
-@Api(url = "userDetail")
-interface UserDetailApi {
-	
-	/**
-	 * 在这里使用 @GET 注解并传递 url，生成的 url 会自动拼接上 @Api 上提供的 url
-	 */
-	@BearerAuth
-	@GET(url = "query")
-	suspend fun query(): UserDetailDTO
-	
-	/**
-	 * 你也可以使用 http:// 或 https:// 前缀的 url
-	 */
-	@BearerAuth
-	@POST(url = "https://ktorfitx.cn:8080/api/userDetail/update")
-	suspend fun fetch(
-		@Field type: String,
-		@Field value: String?
-	): Boolean
-}
+在这里使用 @GET 注解并传递 url，生成的 url 会自动拼接上 @Api 上提供的 url
 
-@Serializable
-data class UserDetailDTO(
-	val username: String,
-	val nickname: String
-)
+```kotlin
+@BearerAuth
+@GET(url = "query")
+suspend fun fetchUserDetail(): UserDetailDTO
+```
+
+你也可以使用 http:// 或 https:// 前缀的 url
+
+```kotlin
+@BearerAuth
+@POST(url = "https://ktorfitx.cn:8080/api/userDetail/update")
+suspend fun updateUserDetail(
+	@Field key: String,
+	@Field value: String?
+): Boolean
 ```
 
 ## 生成实现
 
 ```kotlin
-private class UserDetailApiImpl private constructor(
-	private val config: KtorfitxConfig,
-) : UserDetailApi {
-	
-	override suspend fun query(): UserDetailDTO {
-		val token = this.config.token?.invoke()
-		val response = this.config.httpClient.get {
-			this.url("userDetail/query")
-			if (token != null) {
-				this.bearerAuth(token)
-			}
-		}
-		return response.body()
-	}
-	
-	override suspend fun update(type: String, value: String?): Boolean {
-		val token = this.config.token?.invoke()
-		val response = this.config.httpClient.post {
-			this.url("userDetail/update")
-			if (token != null) {
-				this.bearerAuth(token)
-			}
-			this.contentType(ContentType.Application.FormUrlEncoded)
-			this.setBody(listOf("type" to type, "value" to value).formUrlEncode())
-		}
-		return response.body()
-	}
-	
-	@OptIn(InternalAPI::class)
-	companion object {
-		
-		private var defaultApiScopeInstance: UserDetailApi? = null
-		
-		private val defaultApiScopeSynchronizedObject: SynchronizedObject = SynchronizedObject()
-		
-		fun getInstanceByDefaultApiScope(ktorfitx: Ktorfitx<DefaultApiScope>): UserDetailApi = defaultApiScopeInstance ?: synchronized(defaultApiScopeSynchronizedObject) {
-			defaultApiScopeInstance ?: UserDetailApiImpl(ktorfitx.config).also { defaultApiScopeInstance = it }
+override suspend fun fetchUserDetail(): UserDetailDTO {
+	val token = this.config.token?.invoke()
+	val response = this.config.httpClient.get {
+		this.url("query")
+		if (token != null) {
+			this.bearerAuth(token)
 		}
 	}
+	return response.body()
 }
+```
 
-val Ktorfitx<DefaultApiScope>.userDetailApi: UserDetailApi
-    @JvmName("userDetailApiByDefaultApiScope")
-    get() = UserDetailApiImpl.getInstanceByDefaultApiScope(this)
+```kotlin
+override suspend fun updateUserDetail(key: String, value: String?): Boolean {
+	val token = this.config.token?.invoke()
+	val response = this.config.httpClient.post {
+		this.url("userDetail/update")
+		if (token != null) {
+			this.bearerAuth(token)
+		}
+		this.contentType(ContentType.Application.FormUrlEncoded)
+		this.setBody(listOf("key" to key, "value" to value).formUrlEncode())
+	}
+	return response.body()
+}
 ```

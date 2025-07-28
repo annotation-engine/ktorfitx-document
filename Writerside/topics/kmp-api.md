@@ -58,5 +58,8 @@ private class UserApiImpl private constructor(
 val Ktorfitx<DefaultApiScope>.userApi: UserApi
 	@JvmName("userApiByDefaultApiScope")
 	get() = UserApiImpl.getInstanceByDefaultApiScope(this)
-
 ```
+
+## 注意事项 ⚠️
+
+除 `@Api` 和 `@ApiScope` 文档，其余文档将不展示接口和类的代码，以方便阅读查看

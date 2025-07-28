@@ -33,8 +33,8 @@
 
 - [`@GET`、`@POST`、`@PUT`、`@DELETE`、`@PATCH`、`@OPTIONS`、`@HEAD`](kmp-http-request.md)：标记方法对应 HTTP 请求类型及路径
 - [`@BearerAuth`](kmp-bearer-auth.md)：启用 Bearer token 授权方案，自动加入 Authorization 请求头
-- `@Headers`：声明静态请求头，生成时自动注入多个 headers。
-- `@Mock`：定义 Mock 行为逻辑，用于测试或演示 Mock 数据。
+- [`@Headers`](kmp-headers.md)：声明静态请求头，生成时自动注入多个 headers
+- [`@Mock`](kmp-mock.md)：定义 Mock 行为逻辑，用于测试或演示 Mock 数据
 - `@WebSocket`：将接口函数定义为 WebSocket 通道处理入口。
 - `@Timeout`：配置请求超时时间，用于控制方法的最长执行时长。
 
