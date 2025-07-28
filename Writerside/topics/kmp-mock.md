@@ -4,7 +4,7 @@
 
 ## 示例代码
 
-这里使用 `@Mock` 注解，并制定 provider 参数
+这里使用 `@Mock` 注解，并设置 `provider` 参数
 
 ```kotlin
 @POST(url = "friend/{friendId}")
