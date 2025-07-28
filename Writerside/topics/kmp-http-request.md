@@ -1,5 +1,7 @@
 # HTTP 请求 @GET, @POST...
 
+标记方法对应 HTTP 请求类型及路径
+
 ## 请求类型
 
 | 注解         | 请求类型    | 说明                                  |
@@ -18,13 +20,19 @@
 @Api(url = "userDetail")
 interface UserDetailApi {
 	
+	/**
+	 * 在这里使用 @GET 注解并传递 url，生成的 url 会自动拼接上 @Api 上提供的 url
+	 */
 	@BearerAuth
 	@GET(url = "query")
 	suspend fun query(): UserDetailDTO
 	
+	/**
+	 * 你也可以使用 http:// 或 https:// 前缀的 url
+	 */
 	@BearerAuth
-	@POST(url = "update")
-	suspend fun update(
+	@POST(url = "https://ktorfitx.cn:8080/api/userDetail/update")
+	suspend fun fetch(
 		@Field type: String,
 		@Field value: String?
 	): Boolean
@@ -33,8 +41,7 @@ interface UserDetailApi {
 @Serializable
 data class UserDetailDTO(
 	val username: String,
-	val nickname: String,
-	val avatarUrl: String,
+	val nickname: String
 )
 ```
 

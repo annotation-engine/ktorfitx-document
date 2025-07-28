@@ -26,13 +26,13 @@
 
 ### 目标 `CLASS`
 
-- `@Api`：定义服务接口类型，作为生成 REST 风格 Ktor 请求代码的标识
-- `@ApiScope`：定义生成接口的作用域，控制扩展方法中泛型的类型以规定此服务作用于指定 ktorfitx 配置
+- [`@Api`](kmp-api.md)：定义服务接口类型，作为生成 REST 风格 Ktor 请求代码的标识
+- [`@ApiScope`](kmp-api-scope.md)：定义生成接口的作用域，控制扩展方法中泛型的类型以规定此服务作用于指定 ktorfitx 配置
 
 ### 目标 `FUNCTION`
 
-- `@GET`、`@POST`、`@PUT`、`@DELETE`、`@PATCH`、`@OPTIONS`、`@HEAD`：标记方法对应 HTTP 请求类型及路径
-- `@BearerAuth`：启用 Bearer token 授权方案，自动加入 Authorization 请求头。
+- [`@GET`、`@POST`、`@PUT`、`@DELETE`、`@PATCH`、`@OPTIONS`、`@HEAD`](kmp-http-request.md)：标记方法对应 HTTP 请求类型及路径
+- [`@BearerAuth`](kmp-bearer-auth.md)：启用 Bearer token 授权方案，自动加入 Authorization 请求头
 - `@Headers`：声明静态请求头，生成时自动注入多个 headers。
 - `@Mock`：定义 Mock 行为逻辑，用于测试或演示 Mock 数据。
 - `@WebSocket`：将接口函数定义为 WebSocket 通道处理入口。
@@ -49,6 +49,6 @@
 - `@Cookie`：从 Cookie 中提取参数值注入接口
 - `@Attribute`：用于传递请求属性（attribute），可携带元数据或上下文信息
 
-#### 注意 ⚠️
+#### 注意事项 ⚠️
 
 - `@Body`、`@Field`、`@Part` 这三个注解不能在同一个请求中同时使用

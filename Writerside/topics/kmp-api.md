@@ -5,6 +5,9 @@
 ## 代码示例
 
 ```kotlin
+/**
+ * 在这里使用 @Api 注解
+ */
 @Api(url = "user")
 interface UserApi {
 	
@@ -53,7 +56,7 @@ private class UserApiImpl private constructor(
 }
 
 val Ktorfitx<DefaultApiScope>.userApi: UserApi
-    @JvmName("userApiByDefaultApiScope")
-    get() = UserApiImpl.getInstanceByDefaultApiScope(this)
+	@JvmName("userApiByDefaultApiScope")
+	get() = UserApiImpl.getInstanceByDefaultApiScope(this)
 
 ```

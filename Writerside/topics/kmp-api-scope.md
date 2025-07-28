@@ -1,10 +1,13 @@
 # @ApiScope
 
-定义服务接口类型，作为生成 REST 风格 Ktor 请求代码的标识
+定义生成接口的作用域，控制扩展方法中泛型的类型以规定此服务作用于指定 ktorfitx 配置
 
 ## 代码示例
 
 ```kotlin
+/**
+ * 在这里使用 @ApiScope 注解，并传递 自定义的 UserScope 作用域
+ */
 @ApiScope(scopes = [UserScope::class])
 @Api(url = "user")
 interface UserApi
