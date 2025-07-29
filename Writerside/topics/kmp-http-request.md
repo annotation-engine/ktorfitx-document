@@ -16,15 +16,15 @@
 
 ## 代码示例
 
-在这里使用 @GET 注解并传递 url，生成的 url 会自动拼接上 @Api 上提供的 url
+在这里使用 `@GET` 注解并设置 `url`，生成的 url 会自动拼接上 `@Api` 上提供的 `url`
 
 ```kotlin
 @BearerAuth
-@GET(url = "query")
-suspend fun fetchUserDetail(): UserDetailDTO
+@GET(url = "userDetail/query")
+suspend fun queryUserDetail(): UserDetailDTO
 ```
 
-你也可以使用 http:// 或 https:// 前缀的 url
+你也可以使用 `http://` 或 `https://` 前缀的 url
 
 ```kotlin
 @BearerAuth
@@ -38,7 +38,7 @@ suspend fun updateUserDetail(
 ## 生成实现
 
 ```kotlin
-override suspend fun fetchUserDetail(): UserDetailDTO {
+override suspend fun queryUserDetail(): UserDetailDTO {
 	val token = this.config.token?.invoke()
 	val response = this.config.httpClient.get {
 		this.url("query")

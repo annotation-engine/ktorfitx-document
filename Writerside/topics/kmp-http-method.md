@@ -4,10 +4,9 @@
 
 ## 示例代码
 
+在这里使用 `@HttpMethod` 注解，method 参数默认会使用自定义注解的注解名称
+
 ```kotlin
-/**
- * 在这里使用 @HttpMethod 注解，method 参数默认会使用自定义注解的注解名称
- */
 @HttpMethod(method = "CUSTOM")
 @Retention(AnnotationRetention.SOURCE)
 @Target(AnnotationTarget.FUNCTION)

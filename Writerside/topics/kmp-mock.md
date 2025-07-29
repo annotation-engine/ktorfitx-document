@@ -27,7 +27,7 @@ object FriendMockProvider : MockProvider<FriendDTO> {
 }
 ```
 
-## 代码生成
+## 生成实现
 
 ```kotlin
 override suspend fun fetchFriend(friendId: Int): FriendDTO = this.config.mockClient.request(

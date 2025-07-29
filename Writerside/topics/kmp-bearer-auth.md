@@ -23,7 +23,7 @@ val ktorfitx = ktorfitx {
 suspend fun query(): UserDetailDTO
 ```
 
-## 生成代码
+## 生成实现
 
 在生成的代码中会首先生成获取 token 的代码，然后判空后调用 ktor 提供的 `this.bearerAuth(token)` 方法
 

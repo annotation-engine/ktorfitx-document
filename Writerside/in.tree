@@ -14,5 +14,6 @@
 		<toc-element topic="kmp-bearer-auth.md" />
 		<toc-element topic="kmp-headers.md" />
 		<toc-element topic="kmp-mock.md" />
+		<toc-element topic="kmp-web-socket.md" />
 	</toc-element>
 </instance-profile>

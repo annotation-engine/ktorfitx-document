@@ -13,7 +13,7 @@
 suspend fun fetchInfo(): Info
 ```
 
-## 生成代码
+## 生成实现
 
 ```kotlin
 override suspend fun fetchInfo(): Info {
