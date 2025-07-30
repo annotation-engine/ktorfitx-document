@@ -18,5 +18,6 @@
 		<toc-element topic="kmp-web-socket.md" />
 		<toc-element topic="kmp-timeout.md" />
 		<toc-element topic="kmp-body.md" />
+		<toc-element topic="kmp-query.md" />
 	</toc-element>
 </instance-profile>

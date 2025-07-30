@@ -41,7 +41,7 @@
 ### 目标 `VALUE_PARAMETER`
 
 - [`@Body`](kmp-body.md)：设置请求体内容，支持配置多种序列化类型
-- `@Query`：将参数映射为 URL 查询参数（?key=value）
+- [`@Query`](kmp-query.md)：将参数映射为 URL 查询参数（?key=value）
 - `@Field`：以 x-www-form-urlencoded 格式提交表单字段
 - `@Part`：表示 multipart/form-data 的表单部分，用于文件上传或复杂表单
 - `@Header`：动态注入 HTTP 请求头参数
