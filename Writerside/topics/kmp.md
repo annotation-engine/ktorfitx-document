@@ -31,16 +31,16 @@
 
 ### 目标 `FUNCTION`
 
-- [`@GET`、`@POST`、`@PUT`、`@DELETE`、`@PATCH`、`@OPTIONS`、`@HEAD`](kmp-http-request.md)：标记方法对应 HTTP 请求类型及路径
+- [`@GET、@POST、@PUT、@DELETE、@PATCH、@OPTIONS、@HEAD`](kmp-http-request.md)：HTTP 请求
 - [`@BearerAuth`](kmp-bearer-auth.md)：启用 Bearer token 授权方案，自动加入 Authorization 请求头
 - [`@Headers`](kmp-headers.md)：声明静态请求头，生成时自动注入多个 headers
 - [`@Mock`](kmp-mock.md)：定义 Mock 行为逻辑，用于测试或演示 Mock 数据
 - [`@WebSocket`](kmp-web-socket.md)：将接口函数定义为 WebSocket 通道处理入口
-- `@Timeout`：配置请求超时时间，用于控制方法的最长执行时长
+- [`@Timeout`](kmp-timeout.md)：配置请求的超时时间
 
 ### 目标 `VALUE_PARAMETER`
 
-- `@Body`：代表请求体内容，支持配置多种序列化类型
+- [`@Body`](kmp-body.md)：设置请求体内容，支持配置多种序列化类型
 - `@Query`：将参数映射为 URL 查询参数（?key=value）
 - `@Field`：以 x-www-form-urlencoded 格式提交表单字段
 - `@Part`：表示 multipart/form-data 的表单部分，用于文件上传或复杂表单

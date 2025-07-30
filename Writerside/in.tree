@@ -4,6 +4,7 @@
 	name="Ktorfit X 官方文档｜3.2.3-3.0.3｜建设中..."
 	id="in"
 	start-page="start.md"
+	status="eap"
 >
 	<toc-element topic="start.md" />
 	<toc-element topic="kmp.md">
@@ -15,5 +16,7 @@
 		<toc-element topic="kmp-headers.md" />
 		<toc-element topic="kmp-mock.md" />
 		<toc-element topic="kmp-web-socket.md" />
+		<toc-element topic="kmp-timeout.md" />
+		<toc-element topic="kmp-body.md" />
 	</toc-element>
 </instance-profile>
