@@ -4,10 +4,12 @@ Ktorfit X 是一个基于 Kotlin Multiplatform 和 Ktor 构建的跨平台网络
 
 ## 依赖以及平台版本
 
-- **Kotlin** `2.2.0`
-- **Ktor**：`3.2.3`
-- **KSP**：`2.2.0-2.0.2`
-- **JVM** `21`
+| 平台或依赖库 | 版本          |
+|--------|-------------|
+| Kotlin | 2.2.0       |
+| Ktor   | 3.2.3       |
+| KSP    | 2.2.0-2.0.2 |
+| JVM    | 21          |
 
 ## 核心特点
 
@@ -20,38 +22,39 @@ Ktorfit X 是一个基于 Kotlin Multiplatform 和 Ktor 构建的跨平台网络
 
 ### Kotlin Multiplatform 客户端模块
 
-| 模块名                        | 功能           |
-|----------------------------|--------------|
-| `multiplatform-core`       | 客户端核心功能      |
-| `multiplatform-annotation` | 注解声明         |
-| `multiplatform-websockets` | WebSocket 支持 |
-| `multiplatform-mock`       | Mock 支持      |
-| `multiplatform-ksp`        | 客户端 KSP 生成器  |
+| 模块名                      | 功能           |
+|--------------------------|--------------|
+| multiplatform-core       | 客户端核心功能      |
+| multiplatform-annotation | 注解声明         |
+| multiplatform-websockets | WebSocket 支持 |
+| multiplatform-mock       | Mock 支持      |
+| multiplatform-ksp        | 客户端 KSP 生成器  |
 
 ### Ktor Server 服务端模块
 
-| 模块名                 | 功能           |
-|---------------------|--------------|
-| `server-core`       | 服务端核心支持      |
-| `server-annotation` | 注解声明         |
-| `server-websockets` | WebSocket 支持 |
-| `server-auth`       | 授权支持         |
-| `server-ksp`        | 服务端 KSP 生成器  |
+| 模块名               | 功能           |
+|-------------------|--------------|
+| server-core       | 服务端核心支持      |
+| server-annotation | 注解声明         |
+| server-websockets | WebSocket 支持 |
+| server-auth       | 授权支持         |
+| server-ksp        | 服务端 KSP 生成器  |
 
 ### 通用模块
 
-| 模块名               | 功能        |
-|-------------------|-----------|
-| `common-ksp-util` | 通用符号处理器工具 |
+| 模块名             | 功能        |
+|-----------------|-----------|
+| common-ksp-util | 通用符号处理器工具 |
 
 ## 全面拥抱 3.x，从 2.x 迁移到 3.x
 
-- 原 `cn.vividcode.multiplatform` 包名已迁移为 `cn.ktorfitx`，旧的依赖包已停止维护 ⚠️
+- 原 `cn.vividcode.multiplatform` 包名已迁移为 `cn.ktorfitx`，旧的依赖包已停止维护❗️
 - 新增 Ktor Server 目标平台
+- 支持更多的 KMP 平台
 
 ## 编译期校验
 
-Ktorfit X 提供编译期间的错误校验支持，能够在使用错误的注解或结构时给出明确提示，帮助用户快速定位问题。
+**Ktorfit X** 提供编译期间的错误校验支持，能够在使用错误的注解或结构时给出明确提示，帮助用户快速定位问题。
 
 ## 异常处理
 

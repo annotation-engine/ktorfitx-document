@@ -18,6 +18,10 @@
 | Js      | js(IR) – outputModuleName + nodejs()                                                       |
 | WasmJs  | wasmJs (ExperimentalWasmDsl + nodejs())                                                    |
 
+## 什么是 `Ktorfitx`
+
+- 前往 [](kmp-ktorfitx.md) 查看如何创建 `Ktorfitx` 对象，并如何使用它
+
 ## 全部注解
 
 ### 目标 `ANNOTATION_CLASS`
@@ -42,7 +46,7 @@
 
 - [`@Body`](kmp-body.md)：设置请求体内容，支持配置多种序列化类型
 - [`@Query`](kmp-query.md)：将参数映射为 URL 查询参数（?key=value）
-- `@Field`：以 x-www-form-urlencoded 格式提交表单字段
+- [`@Field`](kmp-field.md)：以 x-www-form-urlencoded 格式提交表单字段
 - `@Part`：表示 multipart/form-data 的表单部分，用于文件上传或复杂表单
 - `@Header`：动态注入 HTTP 请求头参数
 - `@Path`：映射路径参数，对 URL 模板中的 `{}` 片段进行替换

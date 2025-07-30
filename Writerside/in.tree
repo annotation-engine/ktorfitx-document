@@ -8,6 +8,7 @@
 >
 	<toc-element topic="start.md" />
 	<toc-element topic="kmp.md">
+		<toc-element topic="kmp-ktorfitx.md" />
 		<toc-element topic="kmp-api.md" />
 		<toc-element topic="kmp-api-scope.md" />
 		<toc-element topic="kmp-http-method.md" />
@@ -19,5 +20,6 @@
 		<toc-element topic="kmp-timeout.md" />
 		<toc-element topic="kmp-body.md" />
 		<toc-element topic="kmp-query.md" />
+		<toc-element topic="kmp-field.md" />
 	</toc-element>
 </instance-profile>

@@ -1,13 +1,12 @@
 # @Api
 
-定义服务接口类型，作为生成 REST 风格 Ktor 请求代码的标识
+> 定义服务接口类型，作为生成 REST 风格 Ktor 请求代码的标识
 
 ## 代码示例
 
+- 在这里使用 `@Api` 注解，它有一个 `url` 参数，默认值为 `""`
+
 ```kotlin
-/**
- * 在这里使用 @Api 注解
- */
 @Api(url = "user")
 interface UserApi {
 	
@@ -26,7 +25,8 @@ data class LoginDTO(
 
 ## 生成实现
 
-以下代码将会自动生成，您只需要通过 `Ktorfitx<DefaultApiScope>` 的扩展属性 `userApi` 获取实例即可
+- 以下代码将会自动生成，您只需要通过 `Ktorfitx<DefaultApiScope>` 的扩展属性 `userApi` 获取实例即可
+- 如果您想要了解 `Ktorfitx<T>` 相关的文档，进前往 [](kmp-ktorfitx.md) 查看
 
 ```kotlin
 private class UserApiImpl private constructor(
@@ -60,6 +60,6 @@ val Ktorfitx<DefaultApiScope>.userApi: UserApi
 	get() = UserApiImpl.getInstanceByDefaultApiScope(this)
 ```
 
-## 注意事项 ⚠️
+## 注意事项
 
-除 `@Api` 和 `@ApiScope` 文档，其余文档将不展示接口和类的代码，以方便阅读查看
+- 除 `@Api` 和 `@ApiScope` 文档，其余文档将不展示接口和类的代码，以方便用户阅读文档

@@ -1,6 +1,6 @@
 # HTTP 请求 @GET, @POST...
 
-HTTP 请求
+> HTTP 请求
 
 ## 请求类型
 
@@ -16,7 +16,7 @@ HTTP 请求
 
 ## 代码示例
 
-在这里使用 `@GET` 注解并设置 `url`，生成的 url 会自动拼接上 `@Api` 上提供的 `url`
+- 在这里使用 `@GET` 注解并设置 `url`，生成的 url 会自动拼接上 `@Api` 上提供的 `url`
 
 ```kotlin
 @BearerAuth
@@ -24,7 +24,7 @@ HTTP 请求
 suspend fun queryUserDetail(): UserDetailDTO
 ```
 
-你也可以使用 `http://` 或 `https://` 前缀的 url
+- 您也可以使用 `http://` 或 `https://` 前缀的完整 url
 
 ```kotlin
 @BearerAuth
@@ -36,6 +36,9 @@ suspend fun updateUserDetail(
 ```
 
 ## 生成实现
+
+- 这里生成的代码会识别您使用的是哪个请求方式注解，当然也会识别您自定义的注解
+- 如需查看如何创建自定义请求方式，请 [](kmp-http-request.md) 查看教程
 
 ```kotlin
 override suspend fun queryUserDetail(): UserDetailDTO {

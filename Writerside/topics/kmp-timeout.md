@@ -1,10 +1,10 @@
 # @Timeout
 
-配置请求超时时间，用于控制方法的最长执行时长
+> 配置请求超时时间，用于控制方法的最长执行时长
 
 ## 示例代码
 
-在这里使用 `@Timeout` 注解，配置：请求超时时间、连接超时时间 和 套接字超时时间
+- 在这里使用 `@Timeout` 注解，配置：请求超时时间、连接超时时间 和 套接字超时时间
 
 ```kotlin
 @Timeout(
@@ -19,7 +19,7 @@ suspend fun getUserInfo(): UserInfo
 
 ## 生成实现
 
-在 `@Timeout` 中配置的参数会在实现中生成 `this.timeout { }`
+- 在 `@Timeout` 中配置的参数会在实现中生成 `this.timeout { }`
 
 ```kotlin
 override suspend fun getUserInfo(): UserInfo {
