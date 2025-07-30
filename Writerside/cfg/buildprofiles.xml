@@ -8,7 +8,7 @@
 		<custom-favicons>fav_logo.png</custom-favicons>
 		<noindex-content>false</noindex-content>
 		<header-logo>logo.png</header-logo>
-		<download-page>https://github.com/vividcodex/ktorfitx-document/blob/master/ktorfitx.pdf</download-page>
+		<download-page>https://raw.githubusercontent.com/vividcodex/ktorfitx-document/master/ktorfitx.pdf</download-page>
 		<download-title>PDF 下载</download-title>
 		<showDownloadButton>true</showDownloadButton>
 		<link-color>strawberry</link-color>
