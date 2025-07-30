@@ -3,9 +3,9 @@
 <instance-profile
 	name="Ktorfit X 官方文档｜3.2.3-3.0.3｜建设中..."
 	id="in"
-	start-page="index.md"
+	start-page="start.md"
 >
-	<toc-element topic="index.md" />
+	<toc-element topic="start.md" />
 	<toc-element topic="kmp.md">
 		<toc-element topic="kmp-api.md" />
 		<toc-element topic="kmp-api-scope.md" />
