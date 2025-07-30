@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE instance-profile SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 <instance-profile
-	name="Ktorfit X 官方文档｜3.2.2-3.0.2｜建设中..."
+	name="Ktorfit X 官方文档｜3.2.3-3.0.3｜建设中..."
 	id="in"
-	start-page="project-brief.md"
+	start-page="index.md"
 >
-	<toc-element topic="project-brief.md" />
+	<toc-element topic="index.md" />
 	<toc-element topic="kmp.md">
 		<toc-element topic="kmp-api.md" />
 		<toc-element topic="kmp-api-scope.md" />

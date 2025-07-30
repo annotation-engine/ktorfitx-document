@@ -5,7 +5,7 @@ Ktorfit X 是一个基于 Kotlin Multiplatform 和 Ktor 构建的跨平台网络
 ## 依赖以及平台版本
 
 - **Kotlin** `2.2.0`
-- **Ktor**：`3.2.2`
+- **Ktor**：`3.2.3`
 - **KSP**：`2.2.0-2.0.2`
 - **JVM** `21`
 
