@@ -22,6 +22,5 @@
 		<toc-element topic="kmp-body.md" />
 		<toc-element topic="kmp-query.md" />
 		<toc-element topic="kmp-field.md" />
-		<toc-element topic="kmp-part.md" />
 	</toc-element>
 </instance-profile>
