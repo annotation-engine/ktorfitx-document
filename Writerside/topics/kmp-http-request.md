@@ -38,7 +38,7 @@ suspend fun updateUserDetail(
 ## 生成实现
 
 - 这里生成的代码会识别您使用的是哪个请求方式注解，当然也会识别您自定义的注解
-- 如需查看如何创建自定义请求方式，请 [](kmp-http-request.md) 查看教程
+- 如需查看如何创建自定义请求方式，请 [](kmp-http-method.md) 查看教程
 
 ```kotlin
 override suspend fun queryUserDetail(): UserDetailDTO {
