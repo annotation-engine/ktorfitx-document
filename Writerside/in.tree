@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE instance-profile SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 <instance-profile
-	name="Ktorfit X 官方文档｜3.2.3-3.0.3｜建设中..."
+	name="Ktorfit X 官方文档｜3.2.3-3.0.4｜建设中..."
 	id="in"
 	start-page="start.md"
 	status="eap"
 >
 	<toc-element topic="start.md" />
 	<toc-element topic="kmp.md">
+		<toc-element topic="kmp-start.md" />
 		<toc-element topic="kmp-ktorfitx.md" />
 		<toc-element topic="kmp-api.md" />
 		<toc-element topic="kmp-api-scope.md" />
@@ -21,5 +22,6 @@
 		<toc-element topic="kmp-body.md" />
 		<toc-element topic="kmp-query.md" />
 		<toc-element topic="kmp-field.md" />
+		<toc-element topic="kmp-part.md" />
 	</toc-element>
 </instance-profile>

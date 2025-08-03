@@ -11,7 +11,7 @@
 		<download-page>https://raw.githubusercontent.com/vividcodex/ktorfitx-document/master/ktorfitx.pdf</download-page>
 		<download-title>PDF 下载</download-title>
 		<showDownloadButton>true</showDownloadButton>
-		<link-color>strawberry</link-color>
+		<link-color>ruby</link-color>
 		<product-web-url>https://github.com/vividcodex/ktorfitx</product-web-url>
 	</variables>
 	<sitemap change-frequency="daily" priority="1" />
