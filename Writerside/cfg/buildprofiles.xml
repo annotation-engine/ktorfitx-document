@@ -3,7 +3,7 @@
 <buildprofiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd">
 	<variables>
-		<primary-color>ruby</primary-color>
+		<primary-color>#3F8CFF</primary-color>
 		<color-preset>soft</color-preset>
 		<custom-favicons>fav_logo.png</custom-favicons>
 		<noindex-content>false</noindex-content>
@@ -11,7 +11,7 @@
 		<download-page>https://raw.githubusercontent.com/vividcodex/ktorfitx-document/master/ktorfitx.pdf</download-page>
 		<download-title>PDF 下载</download-title>
 		<showDownloadButton>true</showDownloadButton>
-		<link-color>ruby</link-color>
+		<link-color>#2ECC71</link-color>
 		<product-web-url>https://github.com/vividcodex/ktorfitx</product-web-url>
 	</variables>
 	<sitemap change-frequency="daily" priority="1" />
