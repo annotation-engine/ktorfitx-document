@@ -18,11 +18,11 @@ plugins {
  */
 ktorfitx {
 	websockets {
-		enabled = true  // 启用 WebSockets 功能，默认关闭
+		enabled = true  // 启用 WebSockets 功能，默认：false
 	}
 	
 	mock {
-		enabled = true  // 启用 Mock 功能，默认关闭
+		enabled = true  // 启用 Mock 功能，默认：false
 	}
 	
 	ksp {

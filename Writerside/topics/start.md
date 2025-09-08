@@ -22,23 +22,25 @@ Ktorfit X 是一个基于 Kotlin Multiplatform 和 Ktor 构建的跨平台网络
 
 ### Kotlin Multiplatform 客户端模块
 
-| 模块名                      | 功能           |
-|--------------------------|--------------|
-| multiplatform-core       | 客户端核心功能      |
-| multiplatform-annotation | 注解声明         |
-| multiplatform-websockets | WebSocket 支持 |
-| multiplatform-mock       | Mock 支持      |
-| multiplatform-ksp        | 客户端 KSP 生成器  |
+| 模块名                         | 功能           |
+|-----------------------------|--------------|
+| multiplatform-core          | 客户端核心功能      |
+| multiplatform-annotation    | 注解声明         |
+| multiplatform-websockets    | WebSocket 支持 |
+| multiplatform-mock          | Mock 支持      |
+| multiplatform-ksp           | 客户端 KSP 生成器  |
+| multiplatform-gradle-plugin | Gradle 插件    |
 
 ### Ktor Server 服务端模块
 
-| 模块名               | 功能           |
-|-------------------|--------------|
-| server-core       | 服务端核心支持      |
-| server-annotation | 注解声明         |
-| server-websockets | WebSocket 支持 |
-| server-auth       | 授权支持         |
-| server-ksp        | 服务端 KSP 生成器  |
+| 模块名                  | 功能           |
+|----------------------|--------------|
+| server-core          | 服务端核心支持      |
+| server-annotation    | 注解声明         |
+| server-websockets    | WebSocket 支持 |
+| server-auth          | 授权支持         |
+| server-ksp           | 服务端 KSP 生成器  |
+| server-gradle-plugin | Gradle 插件    |
 
 ### 通用模块
 
